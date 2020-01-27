@@ -1,0 +1,27 @@
+.panel {
+    position: absolute;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    height: 100%;
+    /* padding: 2px 16px; */
+    background: white;
+    /*right: 0px;*/
+    /*margin-top: 15px;*/
+    /*margin-right: 15px;*/
+    /*border-radius: 14px;*/
+    background-color: white;
+    color:  grey;
+    list-style-type: none;
+    font-weight: 900;
+    z-index: 5px;
+}
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 50%;
+}
