@@ -3,24 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>View a fullscreen map</title>
+    <title>TIKTS</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
-    <link rel= stylesheet type="text/css" href="main-style.css" rel="stylesheet" media="screen" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+    <!--<script type="text/javascript" href="js/mapa.js"></script>-->
+    <script src="js/MostrarPanel.js"></script>
+    <script src="js/jqueryBuscador.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
 
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel= stylesheet type="text/css" href="css/main-style.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/cssBuscador.css">
 </head>
 
 
@@ -70,12 +63,116 @@
         });
 
         map.addControl(new mapboxgl.FullscreenControl());
-    </script>
+    </script> 
 
     <div class="panel">
         <img id="logo" src="assets/logo.png" alt="">
 
-    </div>
+        <input type="button" value="Artistas" onclick="mostrarArtistas();" />
+        <input type="button" value="Festivales" onclick="mostrarFestivales();" />
+        <header>
+        <input type="search" id="input-search" placeholder="Buscar aqui">
+
+        <!-- tabla para contenido de busqueda-->
+        <div class="content-search">
+            <div class="content-table">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td><a href="index.html#Alesso">Alesso</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="#">Dimitri Vegas</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="#">Ultra</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="#">Ultra2</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="#">Ultra3</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="index.html#Ultra4">Ultra4</a></td>
+                        </tr>
+                        
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </header>
+        <script src="js/search.js"></script>
+
+
+
+
+
+
+        <div id="desplegable">
+        <ul>
+            <li id="Artistas">Artistas
+                <ul>
+                    <li id="Alesso"><a href="#">Alesso</a></li>
+                    <li><a href="#">Dimitri Vegas</a></li>
+                    <li><a href="#">Like Mike</a></li>
+                    <li><a href="#">Martin Garrix</a></li>
+
+                    <li id="Alesso"><a href="#">Alesso</a></li>
+                    <li><a href="#">Dimitri Vegas</a></li>
+                    <li><a href="#">Like Mike</a></li>
+                    <li><a href="#">Martin Garrix</a></li>
+
+                    <li id="Alesso"><a href="#">Alesso</a></li>
+                    <li><a href="#">Dimitri Vegas</a></li>
+                    <li><a href="#">Like Mike</a></li>
+                    <li><a href="#">Martin Garrix</a></li>
+
+                    <li id="Alesso"><a href="#">Alesso</a></li>
+                    <li><a href="#">Dimitri Vegas</a></li>
+                    <li><a href="#">Like Mike</a></li>
+                    <li><a href="#">Martin Garrix</a></li>
+                </ul>
+
+            </li>
+                <li id="Festivales">Festivales
+                    <ul>
+                    <li><a href="#">Madcool</a></li>
+                    <li><a href="#">coachella</a></li>
+                    <li><a href="#">Ultra</a></li>
+                    <li><a href="#">Ultra2</a></li>
+                    <li><a href="#">Ultra3</a></li>
+                    <li id="Ultra4"><a href="#">Ultra4</a></li>
+                    <li><a href="#">Ultra5</a></li>
+                    <li><a href="#">Ultra6</a></li>
+                    <li><a href="#">Ultra7</a></li>
+                    <li><a href="#">Ultra8</a></li>
+                    <li><a href="#">Ultra9</a></li>
+                    <li><a href="#">Ultra10</a></li>
+                    <li><a href="#">Ultra11</a></li>
+                    <li><a href="#">Ultra12</a></li>
+
+                    </ul>
+                </li>
+            
+                </ul>
+
+            </div>
+
+        </div>
 
 </body>
 
