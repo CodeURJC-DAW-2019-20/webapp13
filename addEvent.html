@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="addArtist" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/EstilosFormularios.css">
+    <title>Document</title>
+</head>
+<body>
+   
+
+  <img class="logo" src="assets/logo.png" alt="logo">
+      <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Añadir evento</h3>
+          <fieldset>
+            <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Localizacion" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Descripcion" type="text" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input type="file" name="archivosSubidos[]" multiple></p>
+          </fieldset>
+          
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Añadir</button>
+          </fieldset>
+          <fieldset>
+            <button name="reset" type="reset" id="contact-submit" data-submit="...Sending">Borrar</button>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>
