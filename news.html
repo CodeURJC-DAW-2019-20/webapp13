@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -71,257 +71,316 @@
     </script>
 
     <div class="panel">
-        <img class="logo" src="assets/logo.png" alt="">
+        <a href="index.html"><img class="logo" src="assets/logo.png" alt=""></a>
 
         <div class="tab">
             <button class="tablinks" onclick="mostrarArtistas();">Artistas</button>
             <button class="tablinks" onclick="mostrarFestivales();">Festivales</button>
+            <button class="tablinks" onclick="mostrarNoticias();">Noticias</button>
         </div>
 
-            <div class= "scroll" id="eventos">
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
+        <div class="scroll" id="eventos">
 
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
 
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <a href="event.html">                             <div class="fig-author-figure-title event-card-name">Coachella</div></a>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
             </div>
-            <!--div eventos-->
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
 
-            <div class= "scroll" id="artistas">
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="event-card">
-                    <figure class="fir-image-figure">
-                        <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
-                            <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
-                        </a>
-
-                        <figcaption>
-                            <div class="fig-author-figure-title">Indio, California</div>
-                            <div class="fig-author-figure-title event-card-name">Coachella</div>
-                            <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
-                        </figcaption>
-                    </figure>
-                </div>
-
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <a href="event.html">                             <div class="fig-author-figure-title event-card-name">Coachella</div></a>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
             </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <a href="event.html">                             <div class="fig-author-figure-title event-card-name">Coachella</div></a>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <a href="event.html">                             <div class="fig-author-figure-title event-card-name">Coachella</div></a>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <a href="event.html">                             <div class="fig-author-figure-title event-card-name">Coachella</div></a>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <a href="event.html">
+                            <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        </a>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <!--div artistas-->
+
+        <div class="scroll" id="artistas">
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="artist.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="artist.html">
+                            <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="artist.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="artist.html">
+                            <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="artist.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="artist.html">
+                            <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div><div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="artist.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="artist.html">
+                            <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+        <!--div noticias-->
+
+        <div class="scroll" id="noticias">
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="news.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/madcool-cartel.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="news.html">
+                            <div class="fig-author-figure-title event-card-name">Nuevo Cartel Oficial Madcool 2021</div>
+                        </a>
+                        <div class="fig-author-figure-title event-card-date">11/Enero/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="news.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/madcool-cartel.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="news.html">
+                            <div class="fig-author-figure-title event-card-name">Nuevo Cartel Oficial Madcool 2021</div>
+                        </a>
+                        <div class="fig-author-figure-title event-card-date">11/Enero/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="news.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/madcool-cartel.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="news.html">
+                            <div class="fig-author-figure-title event-card-name">Nuevo Cartel Oficial Madcool 2021</div>
+                        </a>
+                        <div class="fig-author-figure-title event-card-date">11/Enero/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="news.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/madcool-cartel.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="news.html">
+                            <div class="fig-author-figure-title event-card-name">Nuevo Cartel Oficial Madcool 2021</div>
+                        </a>
+                        <div class="fig-author-figure-title event-card-date">11/Enero/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="news.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/madcool-cartel.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="news.html">
+                            <div class="fig-author-figure-title event-card-name">Nuevo Cartel Oficial Madcool 2021</div>
+                        </a>
+                        <div class="fig-author-figure-title event-card-date">11/Enero/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a href="news.html">
+                        <img class="fir-author-image fir-clickcircle" src="assets/madcool-cartel.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <a href="news.html">
+                            <div class="fig-author-figure-title event-card-name">Nuevo Cartel Oficial Madcool 2021</div>
+                        </a>
+                        <div class="fig-author-figure-title event-card-date">11/Enero/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+
+
+
+        </div>
 
     </div>
 
     <div class="event-panel" id="Event_Panel">
-        <button> <i class="far fa-window-close fa-2x" onclick="closeEvent()"></i></button>
+        <a href="index.html"><button> <i class="far fa-window-close fa-2x"></i></button></a>
 
-        <h2 class="news-title">El coronavirus aterroriza Cocachella</h2>
+            <h2 class="news-title">El coronavirus aterroriza Cocachella</h2>
 
-        <img class="news-img-header" src="assets/zombies.jpg"/>
+            <img class="news-img-header" src="assets/zombies.jpg" />
 
-        <p class="news-body">El Festival de Música y Artes de Coachella Valley (en inglés Coachella Valley Music
-            and Arts Festival, también conocido simplemente como Coachella Festival) es un gran festival de música que
-            se desarrolla durante tres días en la última semana del mes de abril (dos días hasta la edición de 2007) y
-            tiene lugar en Indio, California, Estados Unidos. En él se pueden escuchar distintos géneros musicales como
-            el rock alternativo, pop, hip hop y electrónica entre otros. El festival es conocido (además de su música),
-            por la tradición de vestir con la moda hippie de los años 70. A él acuden gran cantidad de celebridades de
-            todos los ámbitos, desde estrellas del pop y del cine, hasta los famosos ángeles de Victoria's Secret.</p>
+            <p class="news-body">
+                El Festival de Música y Artes de Coachella Valley (en inglés Coachella Valley Music
+                and Arts Festival, también conocido simplemente como Coachella Festival) es un gran festival de música que
+                se desarrolla durante tres días en la última semana del mes de abril (dos días hasta la edición de 2007) y
+                tiene lugar en Indio, California, Estados Unidos. En él se pueden escuchar distintos géneros musicales como
+                el rock alternativo, pop, hip hop y electrónica entre otros. El festival es conocido (además de su música),
+                por la tradición de vestir con la moda hippie de los años 70. A él acuden gran cantidad de celebridades de
+                todos los ámbitos, desde estrellas del pop y del cine, hasta los famosos ángeles de Victoria's Secret.
+            </p>
 
-        
-        <br>
 
-        <h2 class="artist-list-title">Artistas relacionados</h2>
-        <ul class="artist-list">
-            <li> <img src="assets/billie-eilish.jpg" class="artist-icon" alt="">
-                <p>Billie Eilish</p>
-            </li>
-            <li> <img src="assets/billie-eilish.jpg" class="artist-icon" alt="">
-                <p>Billie Eilish</p>
-            </li>
-            <li> <img src="assets/billie-eilish.jpg" class="artist-icon" alt="">
-                <p>Billie Eilish</p>
-            </li>
-        </ul>
+            <br>
 
-        <br>
+            <h2 class="artist-list-title">Artistas relacionados</h2>
+            <ul class="artist-list">
+                <li>
+                    <img src="assets/billie-eilish.jpg" class="artist-icon" alt="">
+                    <p>Billie Eilish</p>
+                </li>
+                <li>
+                    <img src="assets/billie-eilish.jpg" class="artist-icon" alt="">
+                    <p>Billie Eilish</p>
+                </li>
+                <li>
+                    <img src="assets/billie-eilish.jpg" class="artist-icon" alt="">
+                    <p>Billie Eilish</p>
+                </li>
+            </ul>
 
-        <h2 class="artist-list-title">Eventos relacionados</h2>
-        <ul class="event-list">
-            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
-                <p>Coachella</p>
-            </div>
-            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
-                <p>Coachella</p>
-            </div>
-            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
-                <p>Coachella</p>
-            </div>
-            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
-                <p>Coachella</p>
-            </div>
-            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
-                <p>Coachella</p>
-            </div>
-        </ul>
+            <br>
+
+            <h2 class="artist-list-title">Eventos relacionados</h2>
+            <ul class="event-list">
+                <div class="event-list-element">
+                    <a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                    <p>Coachella</p>
+                </div>
+                <div class="event-list-element">
+                    <a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                    <p>Coachella</p>
+                </div>
+                <div class="event-list-element">
+                    <a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                    <p>Coachella</p>
+                </div>
+                <div class="event-list-element">
+                    <a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                    <p>Coachella</p>
+                </div>
+                <div class="event-list-element">
+                    <a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                    <p>Coachella</p>
+                </div>
+            </ul>
 
     </div>
 
