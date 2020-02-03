@@ -107,7 +107,8 @@ body{
     list-style-type: none;
     font-weight: 900;
     z-index: 5px;
-    display:none;
+    overflow-y:scroll;
+    overflow-x: hidden;
 }
 
 .event-description {
@@ -259,7 +260,7 @@ button .fa-window-close {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: rgb(47, 57, 66);
+  background-color: green;
 }
 
 /* Style the tab content */
@@ -268,4 +269,16 @@ button .fa-window-close {
   padding: 6px 12px;
   border: rgb(47, 57, 66);
   border-top: none;
+}
+
+.new-body {
+  font-weight: 400;
+  margin: 5%;
+}
+
+.new-img-header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
