@@ -40,5 +40,7 @@ Also adding and removing News as well as seeing all the tickets bought by each u
 ![ScreenShot 2](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/ss2.png)
 - Login Page
 ![ScreenShot 3](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/ss3.png)
+- Add Event Page
+![ScreenShot 4](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/ss4.png)
 
 ## Navigation Diagram
