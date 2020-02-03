@@ -126,6 +126,16 @@ html.wf-active .fir-image-figure .fig-author-figure-title {
   /*border-radius: 14px;*/
 }
 
+.photo{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  border-radius: 1%;
+}
+
 .event-description {
   font-weight: 400;
   margin: 5%;
@@ -146,7 +156,9 @@ html.wf-active .fir-image-figure .fig-author-figure-title {
 .event-title {
   color: rgb(33, 47, 60);
   text-align: center;
-  font-size: 50px;
+  font-size: 80px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .buy-tickets-button {
@@ -231,8 +243,8 @@ html.wf-active .fir-image-figure .fig-author-figure-title {
   font-size: 16px;
   transition-duration: 0.4s;
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 90px;
   z-index: 1000;
 }
 
@@ -287,12 +299,12 @@ button .fa-window-close {
   border-top: none;
 }
 
-.new-body {
+.news-body {
   font-weight: 400;
   margin: 5%;
 }
 
-.new-img-header {
+.news-img-header {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -330,4 +342,39 @@ button .fa-window-close {
 
 .badges {
   text-align: center;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu img {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu p {
+  font-weight: 100;
+  text-align: center;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.artist-element {
+  display: inline-block;
+  margin: 0px 15px;
+  font-weight: 100;
+}
+
+.news-title {
+  color: rgb(33, 47, 60);
+  text-align: center;
+  font-size: 50px;
+  margin: 15px;
 }
