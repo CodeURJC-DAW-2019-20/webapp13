@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tickts</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel=stylesheet type="text/css" href="main-style.css" rel="stylesheet" media="screen" />
+    <script src="https://kit.fontawesome.com/7155903fc6.js" crossorigin="anonymous"></script>
+    <script src="./assets/accion.js"></script>
+    <style>
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="map"></div>
+    <button class="login"> Acceder </button>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9kZGVzaXF1ZWlyYSIsImEiOiJjazV3YzJzNzcwazdqM2huM3UyazRkODZuIn0.arapReUjfPDd-jwJriqd3Q';
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/roddesiqueira/ck5wdrx7v0r1o1ink55jz9e91', //stylesheet location
+            center: [11.255, 43.77], // starting position
+            zoom: 13 // starting zoom
+        });
+
+        map.on("load", function () {
+            /* Image: An image is loaded and added to the map. */
+            map.loadImage("https://i.imgur.com/MK4NUzI.png", function (error, image) {
+                if (error) throw error;
+                map.addImage("custom-marker", image);
+                /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+                map.addLayer({
+                    id: "markers",
+                    type: "symbol",
+                    /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+                    source: {
+                        type: "geojson",
+                        data: {
+                            type: 'FeatureCollection',
+                            features: [
+                                {
+                                    type: 'Feature',
+                                    properties: {},
+                                    geometry: {
+                                        type: "Point",
+                                        coordinates: [-73.9987, 40.7204]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    layout: {
+                        "icon-image": "custom-marker",
+                    }
+                });
+            });
+        });
+
+
+    </script>
+
+    <div class="panel">
+        <a href="index.html"><img class="logo" src="assets/logo.png" alt=""></a>
+
+        <div class="tab">
+            <button class="tablinks" onclick="mostrarArtistas();">Artistas</button>
+            <button class="tablinks" onclick="mostrarFestivales();">Festivales</button>
+        </div>
+
+        <div class="scroll" id="eventos">
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/coachella-img.jpg" alt="">
+                    </a>
+
+                    <figcaption>
+                        <div class="fig-author-figure-title">Indio, California</div>
+                        <div class="fig-author-figure-title event-card-name">Coachella</div>
+                        <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <!--div eventos-->
+
+        <div class="scroll" id="artistas">
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+        
+                    <figcaption>
+                        <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+        
+                    <figcaption>
+                        <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+        
+                    <figcaption>
+                        <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="event-card">
+                <figure class="fir-image-figure">
+                    <a class="fir-imageover" rel="noopener" target="_blank" onclick="openEvent()">
+                        <img class="fir-author-image fir-clickcircle" src="assets/billie-eilish.jpg" alt="">
+                    </a>
+        
+                    <figcaption>
+                        <div class="fig-author-figure-title event-card-name">Billie Eilish</div>
+                    </figcaption>
+                </figure>
+            </div>
+        
+        </div>
+
+    </div>
+
+
+    <div class="event-panel" id="Event_Panel">
+        <button> <i class="far fa-window-close fa-2x" onclick="closeEvent()"></i></button>
+        
+        <center>
+            <div class="artist-header"> <img src="assets/billie-eilish.jpg" class="artist-header-icon"alt="">
+            <h2 class="event-title">Billie Eilish</h2>
+            </div>
+        </center>
+        <div class="badges">
+        <a href="https://music.apple.com/us/artist/billie-eilish/1065981054"><img src="assets/apple-music-badge.png" class="listen-badge" alt="" ></a>
+        <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"><img src="assets/spotify-badge.png" class="listen-badge" alt=""></div></a>
+
+        <p class="event-description">Billie Eilish Pirate Baird O'Connell (Los Ángeles, California; 18 de diciembre de 2001), es
+        una cantante y compositora estadounidense. Adquirió fama como artista cuando tenía 13 años, a raíz del sencillo «Ocean
+        Eyes» que se publicó en 2015 en Soundcloud y que volvió a lanzarse con un vídeo musical en Youtube en 2016, cuando ella
+        contaba con 14 años, y se convirtió en un fenómeno viral.</p>
+
+        <h2 class="artist-list-title">Eventos en los que participa:</h2><br>
+        <ul class="event-list">
+            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                <p>Coachella</p>
+            </div>
+            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                <p>Coachella</p>
+            </div>
+            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                <p>Coachella</p>
+            </div>
+            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                <p>Coachella</p>
+            </div>
+            <div class="event-list-element"><a href="event.html"><img src="assets/coachella-img.jpg" class="artist-icon" alt=""></a>
+                <p>Coachella</p>
+            </div>
+        </ul>
+    </div>
+
+</body>
+
+</html>

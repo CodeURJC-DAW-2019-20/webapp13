@@ -1,173 +1,208 @@
-html{
-    font-family: 'Roboto', sans-serif;
+html {
+  font-family: 'Roboto', sans-serif;
 }
 
-body{
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
-  ::-webkit-scrollbar {display: none;}
-  .fir-clickcircle {
-    height: 80px;
-    width: 80px;
-    border-radius: 100px;
-    cursor: pointer;
-  }
-  
-  .fir-image-figure {
-    margin: 5%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    position: relative;
-    text-decoration: none;
-  }
-  
-  .fir-image-figure .caption, .fir-image-figure figcaption {
-    padding-left: 15px;
-  }
-  
-  html.wf-active .fir-image-figure .fig-author-figure-title {
-    font-size: 16px;
-  }
-  
-  .fir-image-figure .fig-author-figure-title {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    margin-top: 2px;
-  }
-  
-  .fir-imageover {
-    position: relative;
-    display: flex;
-  }
-  
-  .fir-imageover-color {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    background: var(--fir-blue-twitter-alpha);
-    background-image: none;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: background .3s ease-in-out;
-    animation: fadeInFadeOut 2s infinite;
-    top: 0;
-    left: 0;
-  }
-  
-  .fir-imageover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: fadeInFadeOut 2s infinite;
-  }
-  
-  @keyframes fadeInFadeOut {
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.fir-clickcircle {
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.fir-image-figure {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  text-decoration: none;
+}
+
+.fir-image-figure .caption,
+.fir-image-figure figcaption {
+  padding-left: 15px;
+}
+
+html.wf-active .fir-image-figure .fig-author-figure-title {
+  font-size: 16px;
+}
+
+.fir-image-figure .fig-author-figure-title {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-top: 2px;
+}
+
+.fir-imageover {
+  position: relative;
+  display: flex;
+}
+
+.fir-imageover-color {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background: var(--fir-blue-twitter-alpha);
+  background-image: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  animation: fadeInFadeOut 2s infinite;
+  top: 0;
+  left: 0;
+}
+
+.fir-imageover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeInFadeOut 2s infinite;
+}
+
+@keyframes fadeInFadeOut {
+  0% {
+    opacity: 1;
   }
 
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .panel {
-    position: absolute;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 30%;
-    height: 100%;
-    /* padding: 2px 16px; */
-    background: white;
-    /*right: 0px;*/
-    /*margin-top: 15px;*/
-    /*margin-right: 15px;*/
-    /*border-radius: 14px;*/
-    background-color: white;
-    color:  grey;
-    list-style-type: none;
-    font-weight: 900;
-    z-index: 5px;
+  position: absolute;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  height: 100%;
+  /* padding: 2px 16px; */
+  background: white;
+  /*right: 0px;*/
+  /*margin-top: 15px;*/
+  /*margin-right: 15px;*/
+  /*border-radius: 14px;*/
+  background-color: white;
+  color: grey;
+  list-style-type: none;
+  font-weight: 900;
+  z-index: 5px;
 }
 
 .event-panel {
-    position: absolute;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 60%;
-    height: 100%;
-    left: 35%;
-    /* padding: 2px 16px; */
-    background: white;
-    /*right: 5%;/*
+  position: absolute;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 60%;
+  height: 100%;
+  left: 35%;
+  /* padding: 2px 16px; */
+  background: white;
+  /*right: 5%;/*
     /*margin-top: 15px;*/
-    /*margin-right: 15px;*/
-    /*border-radius: 14px;*/
-    background-color: white;
-    color:  grey;
-    list-style-type: none;
-    font-weight: 900;
-    z-index: 5px;
-    display:none;
+  /*margin-right: 15px;*/
+  /*border-radius: 14px;*/
+  background-color: white;
+  color: grey;
+  list-style-type: none;
+  font-weight: 900;
+  z-index: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /*margin-right: 15px;*/
+  /*border-radius: 14px;*/
+}
+
+.photo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  border-radius: 1%;
 }
 
 .event-description {
-    font-weight: 400;
-    margin: 5%;
+  font-weight: 400;
+  margin: 5%;
 }
 
 .event-card {
-    width: 100%;
-    
-}
-
-.scroll{
-height: 80%;
-overflow-y: scroll;
-
+  width: 100%;
 
 }
 
-.event-title{
-    color: rgb(33, 47, 60);
-    text-align: center;
-    font-size: 50px;
+.scroll {
+  height: 80%;
+  overflow-y: scroll;
+
+
+}
+
+.event-title {
+  color: rgb(33, 47, 60);
+  text-align: center;
+  font-size: 80px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .buy-tickets-button {
-    margin: 0 auto;
-    display: block;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    padding: 10px 24px;
-    border: 4px solid rgb(47, 57, 66);
-    font-size: 16px;
-    transition-duration: 0.4s;
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px 24px;
+  border: 2px solid rgb(47, 57, 66);
+  font-size: 16px;
+  transition-duration: 0.4s;
 }
 
 .buy-tickets-button:hover {
-    background-color: rgb(47, 57, 66);
-    color: white;
+  background-color: rgb(47, 57, 66);
+  color: white;
 }
 
 .event-icon {
-    display: inline;
-    float: left;
-    border-radius: 50%;
-    width: 20%;
-    top: 50%;
-    margin: 2%;
+  display: inline;
+  float: left;
+  border-radius: 50%;
+  width: 20%;
+  top: 50%;
+  margin: 2%;
 }
 
 .event-card-name {
-    color: rgb(33, 47, 60);
-    font-weight: bolder;
-    font-size: 22px;
+  color: rgb(33, 47, 60);
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 .event-card-date {
-    font-weight: thin;
-    font-size: 12px;
+  font-weight: thin;
+  font-size: 12px;
 }
 
 .logo {
@@ -179,27 +214,28 @@ overflow-y: scroll;
 }
 
 .artist-list {
-    text-align: center;
+  text-align: center;
 }
 
 .artist-icon {
-    width: 100px;
-    display: inline;
-    border-radius: 50%;
+  width: 100px;
+  display: inline;
+  border-radius: 50%;
 }
 
 .artist-list-title {
-    font-weight: 100;
-    text-align: center;
+  font-weight: 100;
+  text-align: center;
 }
 
 .artist-list li {
-    display: inline-block;
-    margin: 0px 15px;
-    font-weight: 100;
-    
+  display: inline-block;
+  margin: 0px 15px;
+  font-weight: 100;
+
 }
-#artistas{
+
+#artistas {
   display: none;
 }
 .header li{
@@ -234,4 +270,150 @@ margin-left: 40px;
 }
 .datos{
 text-align: center;
+
+.login {
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px 24px;
+  border: 2px solid rgb(47, 57, 66);
+  font-size: 16px;
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  z-index: 1000;
+}
+
+.login:hover {
+  background-color: rgb(47, 57, 66);
+  color: white;
+}
+
+button {
+  all: unset;
+}
+
+button .fa-window-close {
+  margin: 20px;
+  width: 300%;
+}
+
+.tab {
+  margin-top: 5%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: rgb(47, 57, 66);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(47, 57, 66, 1);
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: green;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: rgb(47, 57, 66);
+  border-top: none;
+}
+
+.news-body {
+  font-weight: 400;
+  margin: 5%;
+}
+
+.news-img-header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.artist-header {
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.artist-header-icon {
+  display: inline-block;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.event-list {
+  text-align: center;
+}
+
+.event-list-element {
+  display: inline-block;
+  margin: 0px 15px;
+  font-weight: 100;
+}
+
+.listen-badge {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.badges {
+  text-align: center;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu img {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu p {
+  font-weight: 100;
+  text-align: center;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.artist-element {
+  display: inline-block;
+  margin: 0px 15px;
+  font-weight: 100;
+}
+
+.news-title {
+  color: rgb(33, 47, 60);
+  text-align: center;
+  font-size: 50px;
+  margin: 15px;
 }
