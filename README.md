@@ -34,5 +34,14 @@ Also adding and removing News as well as seeing all the tickets bought by each u
 ### Graphics
 
 ## Screenshots
+- Festival Page
+![ScreenShot 1](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/ss1.png)
+- Artist Page
+![ScreenShot 2](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/ss2.png)
+- Navigation Panel:
+![ScreenShot 3](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/ss3.png)
+
+
+
 
 ## Navigation Diagram
