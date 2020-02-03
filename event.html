@@ -6,9 +6,9 @@
     <title>View a fullscreen map</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
     <link rel= stylesheet type="text/css" href="main-style.css" rel="stylesheet" media="screen" />
+    <script src="https://kit.fontawesome.com/7155903fc6.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
@@ -73,7 +73,7 @@
         map.addControl(new mapboxgl.FullscreenControl());
     </script>
 
-    <div class="panel">
+<div class="panel">
         <img class="logo" src="assets/logo.png" alt="">
         <div class="event-card">
                 <figure class="fir-image-figure">
@@ -131,6 +131,24 @@
                 </figure>            
         </div>
 
+    </div>
+
+    <div class="event-panel">
+        <button> <i class="far fa-window-close"></i></button>
+        <a> Acceder </a>
+
+        <h2 class="event-title">Coachella</h2>
+
+        <button class="buy-tickets-button"> Comprar entradas</button>
+
+        <p class="event-description">El Festival de Música y Artes de Coachella Valley (en inglés Coachella Valley Music and Arts Festival, también conocido simplemente como Coachella Festival) es un gran festival de música que se desarrolla durante tres días en la última semana del mes de abril (dos días hasta la edición de 2007) y tiene lugar en Indio, California, Estados Unidos. En él se pueden escuchar distintos géneros musicales como el rock alternativo, pop, hip hop y electrónica entre otros. El festival es conocido (además de su música), por la tradición de vestir con la moda hippie de los años 70. A él acuden gran cantidad de celebridades de todos los ámbitos, desde estrellas del pop y del cine, hasta los famosos ángeles de Victoria's Secret.</p>
+
+        <h2 class="artist-list-title">Artistas</h2>
+        <ul class="artist-list">
+            <li> <img src="assets/billie-eilish.jpg" class="artist-icon" alt=""> <p>Billie Eilish</p></li>
+            <li> <img src="assets/billie-eilish.jpg" class="artist-icon" alt=""> <p>Billie Eilish</p></li>
+            <li> <img src="assets/billie-eilish.jpg" class="artist-icon" alt=""> <p>Billie Eilish</p></li>
+        </ul>
     </div>
 
 </body>
