@@ -4,24 +4,29 @@
 <head>
     <meta charset="utf-8" />
     <title>Acceso Usuario</title>
-    <link rel=stylesheet type="text/css" href="css/formStyles.css" media="screen" />
+    <link rel=stylesheet type="text/css" href="css/EstilosFormularios.css" media="screen" />
 </head>
 <body>
     <br><br><br>
     <a href="index.html"><img id="logo" src="assets\logo.png"></a>
     <div class="container">
         <form id="contact" action="" method="post">
-            <h3>Iniciar Sesión</h3>
+            <h3>Registrarse</h3>
             <fieldset>
-                <input placeholder="Usuario" type="text" tabindex="1" required>
+                <input placeholder="Nombre Completo" type="text" tabindex="1" required>
             </fieldset>
             <fieldset>
-                <input placeholder="Contraseña" type="password" tabindex="2" required>
+                <input placeholder="Usuario" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Email" type="text" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Contraseña" type="password" tabindex="4" required>
             </fieldset>
             <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Iniciar Sesión</button>
             </fieldset>
-            <a href="register.html"><p>¿No estás registrado aún? <b>REGISTRARSE</b></p></a>
         </form>
     </div>
 
