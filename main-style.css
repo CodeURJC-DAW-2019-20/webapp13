@@ -1,7 +1,12 @@
 html{
     font-family: 'Roboto', sans-serif;
 }
-  
+
+body{
+  margin: 0;
+  padding: 0;
+}
+  ::-webkit-scrollbar {display: none;}
   .fir-clickcircle {
     height: 80px;
     width: 80px;
@@ -102,6 +107,7 @@ html{
     list-style-type: none;
     font-weight: 900;
     z-index: 5px;
+    display:none;
 }
 
 .event-description {
@@ -111,7 +117,14 @@ html{
 
 .event-card {
     width: 100%;
-    background: white;
+    
+}
+
+.scroll{
+height: 80%;
+overflow-y: scroll;
+
+
 }
 
 .event-title{
@@ -185,4 +198,7 @@ html{
     margin: 0px 15px;
     font-weight: 100;
     
+}
+#artistas{
+  display: none;
 }
