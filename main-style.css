@@ -185,6 +185,10 @@ html.wf-active .fir-image-figure .fig-author-figure-title {
   color: white;
 }
 
+.buy-tickets-button a {
+  all: unset;
+}
+
 .event-icon {
   display: inline;
   float: left;
