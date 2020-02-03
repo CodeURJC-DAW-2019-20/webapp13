@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
 * {
   margin: 0;
   padding: 0;
@@ -17,35 +18,44 @@ body {
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
-  color: #777;
-  background: #43A047;;
+  color: rgb(77, 77, 77);
+  background: rgb(185, 185, 185);
 }
 
 .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    width: 25%;
-  }
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 25%;
+}
+
+#logo {
+  height: 25%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .container {
   max-width: 400px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  
+
   position: relative;
 }
 
 #contact input[type="text"],
 #contact textarea,
-#contact button[type="submit"],#contact button[type="reset"] {
+#contact button[type="submit"],
+#contact button[type="reset"] {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
 #contact {
-  background:#F9F9F9;
+  background: #F9F9F9;
   padding: 25px;
   margin-top: 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -90,11 +100,12 @@ fieldset {
   resize: none;
 }
 
-#contact button[type="submit"],#contact button[type="reset"] {
+#contact button[type="submit"],
+#contact button[type="reset"] {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background: rgb(126, 126, 126);
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -102,7 +113,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
+  background: rgb(185, 185, 185));
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
