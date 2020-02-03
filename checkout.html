@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="addArtist" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formStyles.css">
+    <link rel="stylesheet" href="css/Toggle.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img class="logo" src="assets/logo.png" alt="logo">
+      <div class="container">  
+        
+        <form id="contact" action="" method="post">
+          <h3>Comprar entrada.</h3>
+          <ul>
+            <li>
+              <input type="radio" id="f-option" name="selector">
+              <label for="f-option">Entrada normal</label>
+              
+              <div class="check"></div>
+            </li>
+            
+            <li>
+              <input type="radio" id="s-option" name="selector">
+              <label for="s-option">Entrada VIP</label>
+              
+              <div class="check"><div class="inside"></div></div>
+            </li>
+        </ul>
+          <br>
+          <fieldset>
+            <input placeholder="Nombre" type="text" tabindex="1" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Email" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Número de telefono" type="text" tabindex="3" required>
+          </fieldset>
+          
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Comprar Entrada</button>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>
