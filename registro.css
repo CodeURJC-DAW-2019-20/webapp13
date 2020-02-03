@@ -32,39 +32,22 @@
         width: 100%;
     }
 
+.nombre {
+    background-color: red;
+}
+
 .username {
     background-color: red;
 }
 
-    .username::after {
-        content: "";
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        border-style: solid;
-        border-width: 0.5em 0.469em 0 0.469em;
-        border-color: red transparent transparent transparent;
-        top: 6.25em;
-        left: 50%;
-        margin-left: -0.496em;
-    }
-
+    
+.email{
+    background-color: red;
+}
 .password {
     background-color: red;
 }
 
-    .password::after {
-        content: "";
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        border-style: solid;
-        border-width: 0.5em 0.469em 0 0.469em;
-        border-color: red transparent transparent transparent;
-        top: 12.5em;
-        left: 50%;
-        margin-left: -0.496em;
-    }
 
 .login {
     background-color: red;
