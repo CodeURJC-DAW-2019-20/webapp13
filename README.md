@@ -31,7 +31,8 @@ Also adding and removing News as well as seeing all the tickets bought by each u
 - News: one or more pictures.
 - Users: one profile picture.
 
-### Graphics
+### Technologies Used
+-Mapbox GL: maps API that allow us to display the location of the events.
 
 ## Screenshots
 - Festival Page
