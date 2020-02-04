@@ -238,10 +238,11 @@ html.wf-active .fir-image-figure .fig-author-figure-title {
   font-weight: 100;
 
 }
-
-#artistas {
+/* this open festivals by default*/
+#artistas,#noticias {
   display: none;
 }
+
 /* Style the profile html*/
 .profile_img{
   width: 200px;
