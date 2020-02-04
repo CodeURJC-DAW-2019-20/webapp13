@@ -21,7 +21,8 @@ Tickts is a webshop for festival tickets for all around the world.
 
 ### User Permissions
 
-- **User**: an user should be able to see all festivals, all artists that participate on the festivals around the world. Also should be able to register on the webpage to buy tickets and see in the profile page all the tickets that have been bought.
+- **Anonymous User**: an user should be able to see all festivals, all artists that participate on the festivals around the world. Also should be able to register on the webpage to buy tickets.
+- **Registered User**: an registered user should be able to do all the things that an anonymous user can do and also access his profile page to see all the tickets that have been bought.
 - **Administrator**: the administrator should be able to do all the things that an user can do, but also manage all festivals and artist, being able to add and delete at his pleasure.
 Also adding and removing News as well as seeing all the tickets bought by each user.
 
