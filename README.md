@@ -14,10 +14,10 @@ Tickts is a webshop for festival tickets for all around the world.
 
 ### Entities
 
-- Artists: attend to Events.
-- Events: contain Artists who attend to the Events.
-- News: updates about Events & Artists.
-- Users: buy tickets for Events.
+- **Artists**: attend to Events.
+- **Events**: contain Artists who attend to the Events.
+- **News**: updates about Events & Artists.
+- **Users**: buy tickets for Events.
 
 ### User Permissions
 
@@ -26,13 +26,13 @@ Tickts is a webshop for festival tickets for all around the world.
 Also adding and removing News as well as seeing all the tickets bought by each user.
 
 ### Pictures
-- Artists: one profile picture.
-- Events: one or more pictures about the event.
-- News: one or more pictures.
-- Users: one profile picture.
+- **Artists**: one profile picture.
+- **Events**: one or more pictures about the event.
+- **News**: one or more pictures.
+- **Users**: one profile picture.
 
 ### Technologies Used
--Mapbox GL: maps API that allow us to display the location of the events.
+- **Mapbox GL**: maps API that allow us to display the location of the events.
 
 ## Screenshots
 - Festival Page
