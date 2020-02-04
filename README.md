@@ -44,3 +44,4 @@ Also adding and removing News as well as seeing all the tickets bought by each u
 ![ScreenShot 4](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/ss4.png)
 
 ## Navigation Diagram
+![ScreenShot 4](https://github.com/CodeURJC-DAW-2019-20/webapp13/blob/master/assets/flow-diagram.jpg)
