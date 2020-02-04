@@ -48,6 +48,7 @@ body {
 }
 
 #contact input[type="text"],
+#contact input[type="password"],
 #contact textarea,
 #contact button[type="submit"],
 #contact button[type="reset"] {
@@ -78,6 +79,7 @@ fieldset {
 }
 
 #contact input[type="text"],
+#contact input[type="password"],
 #contact textarea {
   width: 100%;
   border: 1px solid rgb(32, 31, 31);
@@ -87,6 +89,7 @@ fieldset {
 }
 
 #contact input[type="text"]:hover,
+#contact input[type="password"]:hover,
 #contact textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
