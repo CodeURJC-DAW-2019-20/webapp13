@@ -38,30 +38,77 @@
             map.loadImage("https://i.imgur.com/MK4NUzI.png", function (error, image) {
                 if (error) throw error;
                 map.addImage("custom-marker", image);
-                /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
-                map.addLayer({
-                    id: "markers",
-                    type: "symbol",
-                    /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
-                    source: {
-                        type: "geojson",
-                        data: {
-                            type: 'FeatureCollection',
-                            features: [
-                                {
-                                    type: 'Feature',
-                                    properties: {},
-                                    geometry: {
-                                        type: "Point",
-                                        coordinates: [-3.9987, 40.7204]
-                                    }
+                map.addSource('places', {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Coachella</strong><p>California, United States</p>',
+                                    'icon-image': 'custom-marker'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-116.173897, 33.680302]
                                 }
-                            ]
-                        }
-                    },
-                    layout: {
-                        "icon-image": "custom-marker",
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>MadCool</strong><p>Madrid, Spain</p>',
+                                    'icon-image': 'custom-marker'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-3.703790, 40.416775]
+                                }
+                            },
+                        ]
                     }
+                });
+                map.addLayer({
+                    'id': 'places',
+                    'type': 'symbol',
+                    'source': 'places',
+                    'layout': {
+                        'icon-image': 'custom-marker',
+                    }
+                });
+                // Create a popup, but don't add it to the map yet.
+                var popup = new mapboxgl.Popup({
+                    closeButton: false,
+                    closeOnClick: false
+                });
+
+                map.on('mouseenter', 'places', function (e) {
+                    // Change the cursor style as a UI indicator.
+                    map.getCanvas().style.cursor = 'pointer';
+
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+                    var description = e.features[0].properties.description;
+
+                    // Ensure that if the map is zoomed out such that multiple
+                    // copies of the feature are visible, the popup appears
+                    // over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+
+                    // Populate the popup and set its coordinates
+                    // based on the feature found.
+                    popup
+                        .setLngLat(coordinates)
+                        .setHTML(description)
+                        .addTo(map);
+                });
+
+                map.on('mouseleave', 'places', function () {
+                    map.getCanvas().style.cursor = '';
+                    popup.remove();
                 });
             });
         });
@@ -86,7 +133,7 @@
 
                     <figcaption>
                         <div class="fig-author-figure-title">Indio, California</div>
-                        <a href="event.html">                             <div class="fig-author-figure-title event-card-name">Coachella</div></a>
+                        <a href="event.html"> <div class="fig-author-figure-title event-card-name">Coachella</div></a>
                         <div class="fig-author-figure-title event-card-date">11/ABRIL/2020 - 13/ABRIL/2020</div>
                     </figcaption>
                 </figure>
