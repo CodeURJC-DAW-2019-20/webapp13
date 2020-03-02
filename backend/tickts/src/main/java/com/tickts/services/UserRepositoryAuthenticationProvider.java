@@ -1,4 +1,4 @@
-package com.tickts.security;
+package com.tickts.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +13,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
-
-import com.tickts.entities.User;
-import com.tickts.services.UserRepository;
 
 @Component
 public class UserRepositoryAuthenticationProvider implements AuthenticationProvider {
