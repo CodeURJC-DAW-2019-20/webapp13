@@ -10,23 +10,24 @@
     <br><br><br>
     <a href="index.html"><img id="logo" src="assets\logo.png"></a>
     <div class="container">
-        <form id="contact" action="" method="post">
+        <form id="contact" action="/signup" method="post" modelAttribute="user">
             <h3>Registrarse</h3>
             <fieldset>
-                <input placeholder="Nombre Completo" type="text" tabindex="1" required>
+                <input placeholder="Nombre Completo" type="text"  name="name" {{#user.name}}value="user.name"{{/user.name}}required>
             </fieldset>
             <fieldset>
-                <input placeholder="Usuario" type="text" tabindex="2" required>
+                <input placeholder="Usuario" type="text" name="username" {{#user.username}}value="user.username"{{/user.username}} required>
             </fieldset>
             <fieldset>
-                <input placeholder="Email" type="text" tabindex="3" required>
+                <input placeholder="Email" type="text" name="email" {{#user.email}}value="user.email"{{/user.email}} required>
             </fieldset>
             <fieldset>
-                <input placeholder="Contraseña" type="password" tabindex="4" required>
+                <input placeholder="Contraseña" type="password" name="passwordHash" {{#user.passwordHash}}value="user.passwordHash"{{/user.passwordHash}} required>
             </fieldset>
             <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Iniciar Sesión</button>
             </fieldset>
+            <input type="hidden" name="_csrf" value="{{token}}">
         </form>
     </div>
 

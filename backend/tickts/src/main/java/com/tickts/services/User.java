@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
+
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Entity
@@ -20,23 +22,36 @@ public class User {
 	private Long id;
 
 	private String name;
+	
+	private String username;
 
 	private String passwordHash;
+	
+	@Email
+	private String email;
+	
+	
 	@ElementCollection(fetch = FetchType.EAGER)
 	private List<String> roles;
 
 	public User() {
 	
 	}
-	public User(String name, String password, String roles) {
+	
+	public User(String name, String username, String email, String password, String roles) {
 		super();
+		this.username = username;
 		this.name = name;
+		this.email=email;
 		this.passwordHash = new BCryptPasswordEncoder().encode(password);
 		this.roles = new ArrayList<>(Arrays.asList(roles));
 	}
-	public User(String name, String password, List<String> roles) {
+	
+	public User(String name, String username, String email, String password, List<String> roles) {
 		super();
+		this.username = username;
 		this.name = name;
+		this.email=email;
 		this.passwordHash = new BCryptPasswordEncoder().encode(password);
 		this.roles = roles;
 	}
@@ -56,7 +71,15 @@ public class User {
 	public void setPasswordHash(String passwordHash) {
 		this.passwordHash = passwordHash;
 	}
-
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	public List<String> getRoles() {
 		return roles;
 	}
@@ -69,5 +92,11 @@ public class User {
 	}
 	public void setRolDefault() {
 		this.roles.add("ROLE_USER");
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
 	}
 }

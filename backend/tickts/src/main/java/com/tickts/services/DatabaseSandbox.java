@@ -20,8 +20,8 @@ public class DatabaseSandbox {
 	
 	@PostConstruct
 	public void init() {
-		userRepository.save(new User("user", "pass", "ROLE_USER"));
-		userRepository.save(new User("admin", "adminpass", "ROLE_ADMIN"));
+		userRepository.save(new User("juanma","user","juanma@gmail.com" ,"pass", "ROLE_USER"));
+		userRepository.save(new User("Pedro de la hoz","admin","admin@gmail.com", "adminpass", "ROLE_ADMIN"));
 		
 		Artist a1 = new Artist("artist1");
 		Artist a2 = new Artist("artist2");
