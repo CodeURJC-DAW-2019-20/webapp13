@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.tiks.controllers;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -15,19 +15,22 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.tickts.entities.User;
+import com.tickts.services.UserRepository;;
 
 @Controller
 public class WebController {
-	public List<User> users = new ArrayList<>();
 	
 	@Autowired
 	private UserRepository userRepository;
-/*
+	
+	
+
     @GetMapping("/")
     public String index() {
-        return "index";
+        return "index.html";
     }
-*/
+
     @GetMapping("/login")
     public String login() {
     	return "login";
@@ -36,16 +39,6 @@ public class WebController {
     @GetMapping("/loginerror")
     public String loginerror() {
     	return "loginerror";
-    }
-
-    @GetMapping("/home")
-    public String home(Model model, HttpServletRequest request) {
-    	User user = userRepository.findByName(request.getUserPrincipal().getName());
-    	
-    	model.addAttribute("admin", request.isUserInRole("ADMIN"));
-    	model.addAttribute("username", user.getName());
-    	
-    	return "home";
     }
     
     @GetMapping("/admin")

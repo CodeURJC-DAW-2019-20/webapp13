@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.tickts.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
     
     	// Public pages
-        http.authorizeRequests().antMatchers("/").permitAll();
+    	http.authorizeRequests().antMatchers("/").permitAll();
+        http.authorizeRequests().antMatchers("/index").permitAll();
         http.authorizeRequests().antMatchers("/login").permitAll();
         http.authorizeRequests().antMatchers("/loginerror").permitAll();
         http.authorizeRequests().antMatchers("/logout").permitAll();
