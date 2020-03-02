@@ -25,7 +25,11 @@ public class WebController {
 
     @GetMapping("/")
     public String index() {
-        return "index.html";
+        return "index";
+    }
+    @GetMapping("/login")
+    public String login() {
+        return "login";
     }
 
     
